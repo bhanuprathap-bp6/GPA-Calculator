@@ -1,0 +1,1426 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> GPA Calculator </title>
+
+<script type="text/javascript">
+
+function choosesem() {
+	var sem = document.getElementById("sem");
+	sem_val=sem.options[sem.selectedIndex].value;
+	if(sem_val==1){
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-1").style.display="block";}
+	
+	if(sem_val==2){
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-2").style.display="block";}
+
+	if(sem_val==3){
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-3").style.display="block";}
+
+	if(sem_val==4){
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-4").style.display="block";}
+
+	if(sem_val==5){
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-5").style.display="block";}
+
+	if(sem_val==6) {
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-6").style.display="block";}
+
+	if(sem_val==7) {
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-7").style.display="block";}
+
+	if(sem_val==8) {
+	document.getElementById("select-sem").style.display="none";
+	document.getElementById("semester-8").style.display="block";}
+}
+
+function sem1() {
+	
+	var english = document.getElementById("HS5151");
+	A=english.options[english.selectedIndex].value;
+    	console.log(A);
+
+	var M1 = document.getElementById("MA5158");
+	B = M1.options[M1.selectedIndex].value;
+    	console.log(B);
+
+	var physics = document.getElementById("PH5151");
+	C = physics.options[physics.selectedIndex].value;
+    	console.log(C);
+
+	var chemistry = document.getElementById("CY5151");
+	D = chemistry.options[chemistry.selectedIndex].value;
+    	console.log(D);
+
+	var python = document.getElementById("GE5153");
+	E = python.options[python.selectedIndex].value;
+    	console.log(E);
+
+	var BSlab = document.getElementById("BS5161");
+	F = BSlab.options[BSlab.selectedIndex].value;
+    	console.log(F);
+
+	var pylab = document.getElementById("GE5161");
+	G = pylab.options[pylab.selectedIndex].value;
+    	console.log(G);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*4)+(B*4)+(C*3) +(D*3) +(E*3) +(F*2) +(G*2)) / 21
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+function sem2() {
+	
+	var a = document.getElementById("MA5252");
+	A =a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("EE5201");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("GE5152");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	var d = document.getElementById("EC5251");
+	D = d.options[d.selectedIndex].value;
+    	console.log(D);
+
+	var e = document.getElementById("PH5202");
+	E = e.options[e.selectedIndex].value;
+    	console.log(E);
+
+	var f = document.getElementById("GE5162");
+	F = f.options[f.selectedIndex].value;
+    	console.log(F);
+
+	var g = document.getElementById("EC5211");
+	G = g.options[g.selectedIndex].value;
+    	console.log(G);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*4)+(B*3)+(C*4) +(D*4) +(E*3) +(F*2) +(G*2)) / 22
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+function sem3() {
+	
+	var a = document.getElementById("MA5356");
+	A=a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("EC5301");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("EC5302");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	var d = document.getElementById("EC5303");
+	D = d.options[d.selectedIndex].value;
+    	console.log(D);
+
+	var e = document.getElementById("EC5304");
+	E = e.options[e.selectedIndex].value;
+    	console.log(E);
+
+	var f = document.getElementById("EC5311");
+	F = f.options[f.selectedIndex].value;
+    	console.log(F);
+
+	var g = document.getElementById("EE5313");
+	G = g.options[g.selectedIndex].value;
+    	console.log(G);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*4)+(B*4)+(C*3) +(D*3) +(E*4) +(F*4) +(G*4)) / 26
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+function sem4() {
+	
+	var a = document.getElementById("EC5401");
+	A=a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("EC5402");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("EC5403");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	var d = document.getElementById("EC5404");
+	D = d.options[d.selectedIndex].value;
+    	console.log(D);
+
+	var e = document.getElementById("EC5405");
+	E = e.options[e.selectedIndex].value;
+    	console.log(E);
+
+	var f = document.getElementById("GE5251");
+	F = f.options[f.selectedIndex].value;
+    	console.log(F);
+
+	var g = document.getElementById("AC1");
+	G = g.options[g.selectedIndex].value;
+    	console.log(G);
+
+	var h = document.getElementById("EC5411");
+	H = h.options[h.selectedIndex].value;
+    	console.log(H);
+
+	var i = document.getElementById("EC5412");
+	I = i.options[i.selectedIndex].value;
+    	console.log(I);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0 | H==0 | I==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*3)+(B*3)+(C*4) +(D*3) +(E*3) +(F*3) +(G*3) +(H*4) +(I*4)) / 30
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+function sem5() {
+	
+	var a = document.getElementById("EC5501");
+	A=a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("EC5502");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("EC5551");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	var d = document.getElementById("EC5503");
+	D = d.options[d.selectedIndex].value;
+    	console.log(D);
+
+	var e = document.getElementById("PE1");
+	E = e.options[e.selectedIndex].value;
+    	console.log(E);
+
+	var f = document.getElementById("MG5451");
+	F = f.options[f.selectedIndex].value;
+    	console.log(F);
+
+	var g = document.getElementById("EC5561");
+	G = g.options[g.selectedIndex].value;
+    	console.log(G);
+
+	var h = document.getElementById("EC5511");
+	H = h.options[h.selectedIndex].value;
+    	console.log(H);
+
+	var i = document.getElementById("EC5512");
+	I = i.options[i.selectedIndex].value;
+    	console.log(I);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0 | H==0 | I==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*3)+(B*3)+(C*3) +(D*3) +(E*3) +(F*3) +(G*2) +(H*2) +(I*2)) / 24
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+function sem6() {
+	
+	var a = document.getElementById("EC5651");
+	A=a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("EC5601");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("EC5602");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	var d = document.getElementById("PE2");
+	D = d.options[d.selectedIndex].value;
+    	console.log(D);
+
+	var e = document.getElementById("OE1");
+	E = e.options[e.selectedIndex].value;
+    	console.log(E);
+
+	var f = document.getElementById("EH2");
+	F = f.options[f.selectedIndex].value;
+    	console.log(F);
+
+	var g = document.getElementById("EC5611");
+	G = g.options[g.selectedIndex].value;
+    	console.log(G);
+
+	var h = document.getElementById("EC5612");
+	H = h.options[h.selectedIndex].value;
+    	console.log(H);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0 | H==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*3)+(B*3)+(C*3) +(D*3) +(E*3) +(F*3) +(G*2) +(H*2)) / 22
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+function sem7() {
+	
+	var a = document.getElementById("EC5701");
+	A=a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("EH1");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("PE3");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	var d = document.getElementById("PE4");
+	D = d.options[d.selectedIndex].value;
+    	console.log(D);
+
+	var e = document.getElementById("OE2");
+	E = e.options[e.selectedIndex].value;
+    	console.log(E);
+
+	var f = document.getElementById("EC5711");
+	F = f.options[f.selectedIndex].value;
+    	console.log(F);
+
+	var g = document.getElementById("EC5712");
+	G = g.options[g.selectedIndex].value;
+    	console.log(G);
+
+	if(A==0 | B==0 | C==0 | D==0 | E==0 | F==0 | G==0){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*3)+(B*3)+(C*3) +(D*3) +(E*3) +(F*2) +(G*3)) / 20
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+function sem8() {
+	
+	var a = document.getElementById("PE5");
+	A=a.options[a.selectedIndex].value;
+    	console.log(A);
+
+	var b = document.getElementById("PE6");
+	B = b.options[b.selectedIndex].value;
+    	console.log(B);
+
+	var c = document.getElementById("EC5811");
+	C = c.options[c.selectedIndex].value;
+    	console.log(C);
+
+	if(A==0 | B==0 | C==0 ){
+		document.getElementById("result").style.display="none";
+		document.getElementById("incrt").style.display="block";
+		document.getElementById("incrt").innerHTML="Fill all the Fields.";
+	}
+	else{
+	result = ((A*3)+(B*3)+(C*8)) / 14
+	document.getElementById("incrt").style.display="none";
+	document.getElementById("result").style.display="block";
+	document.getElementById("result").innerHTML="Your GPA : " + result;}
+}
+
+</script>
+
+<style>
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: white;
+	font-size: 14px;
+	background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQEBIQDxUVFRUQFRAPEA8PEBAQFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0dHyUtLS8tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0rKy0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKwBJQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EADcQAAICAQMCBAQEBQMFAQAAAAECABEDBBIhMUEFIlFhE3GBkQYyscFCUqHR8BQj8RUzYnLhgv/EABoBAAMBAQEBAAAAAAAAAAAAAAECAwQABQb/xAAxEQACAgECAwYFBAIDAAAAAAAAAQIRAxIhBDFBE1FhcYHwkaGx0eEiIzLBBRQVUvH/2gAMAwEAAhEDEQA/APe6VQDZK2FA8zj83VrPYcL9pmZ/FyM+4hUIKqAzADapPO48U29ufSoX4pUWuP4h5ITcEUn/ANj/AGnmDpDwpBVj58m7KcpLex6BeegHefDY2pLd14fM9/DiTblL36DniWPljgI4Ry/lYjf0RcZ47AmxfUSmoYFQ6qDwCVy9el8H6zS0mEfkUksR0V1F8c3fInnfENTlx/7ThcJxY9xDkf73n20pPWlA6ddp9o2PHPLK4LZd/l17/wCrLQbyPTf3360vaHcHiCdF2YmHBTIFVW9R7TT0OrB53ULoo9GvkR2mFo/94DJQQEWD2Y31Hevn7/M6ePQIhLMQTQ/MbG2uJPNFJuMrT+PzHpx259DR1CebkWOwHI57kzU8HzO9lmO0cCx1PP8AF3qL6Hw7eiuzBQRYGMk8enoDHkGykXoBXM08JhlF29kZeJzQcNC3f07/AJ7Dl1GPi8RPEYypnpwR5rCLctiY3LqJFTbFUiDdjiHiWuKq0tcc4O2QCU33BkSyGc7AXBqEVpQ8yt1GujqD7pNxcvI+JDrYKGGaAZpUP6yrNFcmEKFnCVVp1w6jg1ypMi5Rmgk7OLwTmSWlHaZpvYZIrIqRvAFn+gJP2Ex9b40DQQOtXbGufYUZDJmjiVv4d5bFhnldRRqvzY9plNjW7IF9Lrn/AOwH/UmPQkH/AMgCD9e0BqMjHkE33HNzyeO4qOXTo2avnXh9jXjwyxum6spqsZX/ALR5slga3Hn+c37cRTLkQ8B8Zb0Dcj58S+Elr5Wuv5jd+3HMpkxoxFij3ING/e/7zz3v0r34m3TJbL1BYD+YnivMav8ALQW/kO8U1moGFGaizsRgxBSA3xCPKQeKq7v5TT0qKhsN8TiipFEe4P0iessrsO1mXIMobaF3gflLjsaNcelx4QuSr7fajo6nsxvwDRp8FXztk+K/me8j7l5NKaPYfqZ0gMKHI6dLHB7idNj/AMg1zxr4Enw+/wDOXxCnNtU24oCyfLwtWb9v8qYWo12mbIGDB22spABLXxQG6ueO8L4Z4omXGj3t3kp8Mm+R1B9RXf0ImbrMOL414qrq67SKb07XfX6H2kYQuTUrTVmnDg0OTyJpV7+PLY9Z4foVFOhDd9ycAH0JP7Ax3NhB/OA/sVBXj2P7zM8EckM35aoFuiqB9fapqDVoe/1ogH3lIZVG1VbnmZ+fO/6MjVaMbjwo3EmqAF9j/T9Ipn0pHHoK5tvtc3cqA/Wuek7Lp1PXg9LEjDHklJ+7NePiIQpsR8BZwSOdtHgfk3duPXrNgCDxKBwAAPbiMIs9bHBpUY+IzLLPVVFsUZVYDEOY4qykZUZ2cphVEGBzChpqhmT2JNHTg0oxlLlu0FGgZYCLLkh0eK8yeyOSCyrGVLypMCnuFs4mV3SGldsLyMUIJISDSGUxtWxx1SCYSUgUgnBpBkCQxhbOILQbm5LGVAkmhwRYiIanwxHLPuKljZsKwv24E0cgieqzFFLBd1Aki9vA69pPJCLj+pWimKc4y/Q6fvvM5vDtoJtT72RcAEPFkj6ua+spqNb8QWSDXIFlQPp3ibZSeBwOBQJNz57iIxnL9tNLxfuj0ZPIl+5Vh8mEA+U8+o5r3uKa1DfIY8VuHWu44B/SM6YtYVACSTy38Kg8kiX1O8OP+2VvzEB922uw+0VRnD9XQrhyrqzE1WqKDy+U88gH9x2g9LrHyGhbEKxZuFGxQdzEngTR8V1OLGu7MBsHQA2zHuKnn/xB4zhOPGunXaMinK26twG5l2enVWv6TVhlKbX6fX8lJ8RBLxIy68k8BvnQN/YzpjY9QCPNzXSqXj5CdNdSF/2493zNjwHKNJk+KWAW9rjazUG6sK9wDxz85o6zMuTI2THtCv5gVHDeUc3QPPvFdd4Lk2Wy8PyOfMGrjd6X6SPC8bLjRctLTHHZ6cMRVn519BM05Ra1Xv8A1+DVx8ITrJjd9HXh9mbOhYVRIA9WIpe18/3mhpM+IG2f6ngfc/tMxMC0zXdeRgG8vB7i+CDf3naXCt9PvzfrR6zMmt2jxciVq0epxZFYWpDfIgzisT0DVx6831H3j4E1YJWhJEIIyggQsIJ6MORIcxLLboqrmEAudQjCl5XdKmcrSc4jKJfmUliZQmTVh0lwYVGgAYRZSNpiNDCy0rjaEE2QSomyhE6pciVIjOICKnCdtnQnF7lCZbdKmF1WwSAZJgyZ1yWoZHGVucTBFpS7OJyGI6tCylRXPBJ6Ad+O8bJgmEWcLVMaLp2Y3/SyBW7uSAbI/wDkXzIcZC4l35Dzub8mMX1Pp3/zibbiLOsxf62ODtL+y6yyfMR0unGMEXbE7mboWb9h7ScmO/Qe8OwlWS+0jnjHQ3JXQ8HJy5mZl8Px5bVlR16XQBH/AKnr9p5vxP8ADKY6CszHmwxUAenQT3gxUOfSvv1qA1WlF3QUep4Bv3nlRy5Mf6laT86+ZV03R4LH4QQOg+5N/wBJ09hn0DGqXcOehAo3z/ntOmpSzSVqEn6E68viN5AGBVgCCKIPQgxLxfArY247g1QIskD6dTGN87Mu5Sv+WOkXQnuxcWRxddDIy6QBviIK3eVwOVLG6P1F/aa3hYpSKHrxzCYcQ2bT35+RhdLh22LsQVJ0O9KTQ1jAEOIBYbG3aWxOtiT3CKIULKLL43BFjnqPsaP6T0YbkmcBCAypkgS6QpLGciSKhMcSUdxk9iSsrthiJwSTeNnWCCQipCrjlgsMcbFbBhZYGWAl9stGNClQZMgrOlAFwJBElTOMpzQpUiTUi5xMnyCByQZhHkBbkEODMoYXIkDKJhorUkyGMo7wylsBAskWyGFyNFnaTbTQ6KmdIgcmrVbskV7SLlGLSborDHOf8VYyq3Gsu2huF+g62ZnaXX424V1JJ2gE0SevT5XGyK9z6mJLDHKlfI56sbaaplgZ0GGkTUopKiD3MXJxLYcsBmySuBp5qWw/U1FaGR4mjwqtEooP4zLEc2OvT2Yeh/vFsLRtZ2OO4boS8T11AKLUt152sAOv7e0pi121Qo3bRZ/lNkk9ZPiOjU27bmK2V3W5QGtwXqa4Fj5ekQBLDy0RQPVeVPcdiOZj4p5O0dWly7lXn4vxvvPUwQxSxLr3+f45fE9LpchZQzcbgCB6ccRrHMXRNkBCUQu2w6qNvbi5q48k9nhMrnDeMlX/AG6+/JVySrl5WeGmWzXoMyB1kb5YTU0SCCXUQamEBhSECiRIEmMkAuqy1SEMtHoBFSpWTc64QlSJVjCEwJi13HFd0qWnPAsZCT3Cc2XmExZIswg7I6QIYeyPxFwYFspMG2SpzYQztF2lDmlw0zZMu9DqIDIZRFuEymWxwLIdQvmXtfJ7d5la3SGgGe7slbBFel9Zs5zMTxHUFW20bIG1RZZuewHvI8U/0JpW728DdwMnr0x83+O5d/lexkeOo22sZCbV8p2K1N1vkV2mr+G/HPj/AO1kG3IB/EfzkDzbTXPrR5+ctp/Dy+LJuNM58rFb2AcDj78TU8F0QxY6obmJZiO56D6UBKcMpxW/L5+viU4vNhlBx5tOvz5Xt5hTIhyJ019oeTpPGB43pjEMbRrCZ50ykKscdqlsWaAYwamJDJ3jaWa+LLG0zTFTJGBmlItJndDVXNEMvhYLkqxRSLAABp/7SEyxhMs0PRkVSVj48s8Tbg6sNocHw123u79KF1zQ9I2GigeWGSVjpglGPJGfJJzk5PmxxXhkaJK8PieXVAHUMKDFfiSy5Z2qjmNgy1xUZYQZJ3aIWg+6dugN8lWjxlYA1zrlA0kmUoBJMi5W5UmBnEOYPbLMZBMlJBRR4nkeM5XiOUybuinM45IHK8qzwGR5mnfMdE75b/UxUtK3INWOMjNDrkiSiFRpy2AEdoPbzdC+l1zUsWlllVLYUjdL43gzOuFOwNDO6dA7p0YNHjA0PiyxItJGSplkrDGLNNskgZYmM1ygySaiU5GiMkKmWZ6ZYcPCk7F5jq54xjzzNUwgeUjNph07GsueGxvMhMkYx5pVbiaTWR4RXmfizRkPLxlQrQ6MksjxLdL43j3YDSUywMWR5ffAkKxjdODQQaSGlYi0Mq0KDFFaX+JLqQAzNILQBySpeFnUFZoJ2g2yQT5JKUqGSOyPBFbg8mSERrElOaopGItqErmKFo3rH4qZrNMspJjpBGMkRZsksMkjuUGLld0orXGUQRG9wUVSXfJQlCaMBle5ye51BUyQlxHFkF1GC8tBiSi1zDhp0X3zo1i6TwxzSTkJimN7jRWhddYHsa8rXQNgeOrzMzHkjmPLJTW5FTVbnZHoy66iLZ8kYxkFR2B689xxGk9KTKcNg7eTSdbFv9VCpqIlkEqhjUmSmnCbhd176mtizRlM0zcLRhIimrOcXVmrhyRxckyMLVHFyyliD4yyweJI0YUy0XYBvHkhVyxVWkhpdRRJjq5ZYZYmGnF4smojJDwyy3xIgMkt8aKswKHviSpyRP4suIXkaQUg265xIglFTncCSnktDxiL5zRgBnI6GdqMlxMtMs8mxZRYTPlgDkg8zRZskSD1INUMlpYRdWhRklHI7SGQxxMnEz0ycwwyyTsNBXaCytQscyhyXKO8dRs5VYDWA8AcE836GM4m455iz817SyvUpjjT3NHFZY5IxUenvmNb50CMkiVsx0eN0WmLEKO89D4vSoAR27CeeXJXSOZfEGZQOvl2m5OcJSNfC54YlK+b9fJUKJLs5EhOJVnBj82YtKohWJjCdP633BlFxcWJI4/z06x5K0CGrHK4umE+MYTELMAoEaxLUm2lsCUpSdt2/EZRZdGlUaSJPs73HWV1VBlyR7AtzOw9Zqacw6qA9+YymOEnY2hbg17nUD3QiSOJdZdZrQuklrlS8l2gSZKeXYooFzkkB5QQmMSSmrA4hcbxlckTM7dD2u4EhrJlEXyZYLI0Ctnv/wAxZ5YwVyZTHCU+QVovnjqY7HJ+ZWZeou6/qOh95lxZY5m0uheUHAC8oEkkwukQlh3mjkiYM450a1dRDUZ9v8LsaJ4HH1M7FcuR0luGSFAnkfFvHMtocHlIvcrc3PSeGalsmNWalJHIHaXzYZ44qT5fQRwkt2OoB2kuk5T2EkmSUmAVcSstklJoUgstOlAZ0WwHksZsSyNzNvD4RjyINgKH+bduN0eCLrr+ksngA75O9WEv95btcdO2PLBJPkZL9IIDieo8H02jBO7UYMzElFU5MYIFc+W+Tz+kt4h4HhQEqXWgWqw24AdBfSQ/2IJ/gZYJ9TK8M05yUALqiRYB22Aa9Z6PFpseO9qgA8m7YkV3J7VMnwLULjLKQx30AF2mqvvNwlfc+/E87j8ktWnp9TTwyi1q6nkMelJJKg0OfUKPcxoafibr6pBxvRf/ABsX9h6zNfLuYWKBIPFDj2mmPESm3KUaXNePx5+aJ/626inz+QPHhriS+KpbPqFRGyG/KD2I3EDoP7zM1XjBLeQDbwBu5JN89PpL4lPJ/Eri/wAflybqPr0NKo7pmmJ4ZqcuZ9gocEmhXAHTk+tfeajLdeZsTKKIXael1YYGwfWCWOWrRtfvqS4nBLBtkNRZdWmEPEShpmB5rz0CflXEOfFkFgsR6MvK8jiiP3qB8Plq0rXhv+SONKe0dzXLQP8AqlF+YCp5nU+ONRUOvpfIP9/rMXUa5q22aHa5ZcDkl1RojgxxvXL0T90e/wAOo3gsLodb+g/cThn9TwOvtPmr6liAoIABsAsAL9RZqN6bQ5nxlw6KhIWjlVQ54oAXR6jr68Sv/H6VcpV78zmsbezo+hq8IWmR4NpXxYgrklrJPm3D6R4MZ58lTpOxZY1e24yHkFoBmrrxFsnimNXCblHUktYqhcTdukGOBy3oayvx0/aBTUAX+nYV+szNb+J8A4X4ji/zL5OPazf6RbwfxP42UquNQoBa2clgLFX6m7+8pPg8k4W1S72Xwx0Jt2beXXHooHP7/wDMsmEV0APAodgOgHtyYL4Xn3HsOPnZuNYzIQ4dY9+thzZE4pR5Vv5gGwy2MV0lsuZR1IHzMgOOpoD1J4lXZjlzIztcT1On3igSv6H5zX0mgOXdRAIAIvo13xcyTqVPKsrduCOo6w4pNO49PUV29+48z4t4eRlCY1LDbuJUccz1Wg0oxqAPQDk83C6PIrqGUhgebHIqA8Yw5GUjGMWQDko1q19iGvgy+bPkktHx8SjuVRk6G8jc9FF8da+0c0mmBB3WO3063955LHqNQlEh8ij0JZgDx5h19O09Jp/EgppiOffgUJ5eftILTB/PdV9C3YPzAalNrFetcX0i7CNazUqzDaFBO6lBAZyDyxPpAlZ6EJ/tpvqY63dAws6HGOdJPMrDR4nB4hlwEgkeZyR6Er1IPp/eep0viLHC22yxXy7W2kGuCD6g11mLj0aZcQGQbuWN9wfN0P8A+R9ot+EBt31zbdSSSOO3pNGRQlGTS3T7vHb6GzHia7OMnaav5J189gh8A1Osb4mZcemPkxgDGAHq7YqD16c9/pNjxHSppcS4fiF6Bcs1lmYUKAHCiqm3hPH+ek8d+P8AVMPh4xVNuJNebtxfpz/QTLizZc2eMG0kui8vj8zS8a5PkIP+IFxNuTliCpsEhfcc1faDT8RajI3ldl5u2K7VHrt6H6iB/wBIn+k37QGGQDcOpFdCYx4Tp1XA2UC2sdeR9p6TjhScnHU06398iM5aVsb+q8UfIipkVN7KzKxBXIyr3AB8p6mvY9JTS5yF2nlh5V/iFHqSfXmYa6hnbzG6qv8Ax5C8fSVzMQCwJB9ZCPCpQ0rZc66HnZuN7LJ/HoafiuuZl+HwADySOT2/rUzceBi2xa3G2UfzADmj3454vvxH/wAP4hmZ2yWTv28GhRKg/WiZleD69l1eHhW3Fk8wPlG2rWjwaJ+804ouEHp6fWrPenx6gpRxLaNc/G2bP4azKubbkJxu23Ggy7sZtulj0JofWetOibZvcJ8QXRRiQBfTmtw+kyNbo0d0yMLZCCputpBJFV7xrU659nXse3vMufVOaktrW/o+ngeNn46GaVtP376mDrdRbMrDYRwN4KhjZHHHH1iWmxZ8bkKq1XO7la6dO5EcwapsmUq9NwfMR5unrNLLgteWY0zJZqyqhaB456ma4ZZQaXL36EowwxWqn8Tz2bE17N2MEdWcKEHvVcf169pmoykbmBqtwJYWy9PKpon5c95qZ/zj5zz/AIvp1xWqcD83Jvluv08o+024G+/n5GyEe1aT9+X/AKMu2L+Ebye26qs0O029H4XpXKD4mS6G/Gdo5I5AahRBv16e88tjNEcDpfPrPWeAZ92IZCqBr+HaqB5B0X5ROJeTbTKvKvsW09lL9Gx6vw7FkUC86ZFB6OAW+H2G4VyJHjOoI5xUbsVu27Ont7noeKiByELwT06dolm1DHqZ4ahmjO5NNeS+xzxRZoDEwO6/ipXQFiwJ69+nuPsIDP4UrbjsvzFT8M7TuPTaebHbi+Y14NiHDc3u62faNa9j8YKCV5DWOt378SzyNUo8++3XlW34J9nT5ul0PHZtJgwZaylnq2+DkPwt47EORtZbq/qOOs9n4bgxppWysuLDkXdkbFhoEY78oN/xAV7TP1jkM/f589esxdYLBUkkXdEn+YcfKUlmnnjHU/fd0Xrz8ehbFwjyN793v35nqMmoU4RlxndanIVG2wvY0SB69+0QQM/mLrjeyCLDKUHa+q37XMP4CggAUCvIHQ8tI/DOufJqfhZKZdzVYsr8j3+twQVxdb1vyp13X7sfJwSjHXdnqculFBshb8v8Nj3FE9Pe4h4jpAwTZlyJwCWXo68kghu/PX+kN49qGVsWMHht9+vBWqP1M8+uuyMU3Mx3MQfM/AodOYceGc32iaXh05PwM8McdNL3z+w+mpyY1KYsm0D+MGnHu3qfevSZ2DSrtBG4nrYO8vwOb+nX3mrrEXYfKtbbI2im+fcxDIrL5Q7FaUbSMe2tzcUF6eURtElfz91v6mxZHjiuzSTr3YumkzLmGRchxAgMQH+GtjoCOlfePZPEc6qQCzgFiBXmyEn+Zu3t7/IST4o5G2sYGPhQEFVfcdD+Y/eKaPRrgo4yw8xWixIr9YuObyO3tVKvV+VBVTtTW/vla+vzO8N8b+ISPPdsONtLQ6sfUsenzjWHK+6mYEVR3KSxNe3AH+cydUiom5ERS1sxCjzMOhPqYpoXJXceSbu5f9uabjFL5v4v31PE4qeXHJx1cq5bfQ1dPmCEdPS1449vQe00tCv5zZ5IKg8jnr7zEXr/AMTZ8LXdwSeh6Gu3p0mTNCuXqebhnKWVW+bDpqOoPFGuCpsUOeTfW+tdJ0PqNKpduv39zOk3iie1UWf/2Q==');
+	  background-repeat: no-repeat;
+  	background-attachment: fixed; 
+ 	 background-size: 100% 100%;
+}
+.wrapper{
+	max-width: 350px;
+	width: 100%;
+	height: auto;
+	margin: 50px auto;
+	background: transparent;
+	border: black;
+	border-radius: 5px;
+	padding: 40px 40px 20px;
+	color:darkred;
+}
+
+
+.wrapper .content{
+	margin: 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 55%;
+	background:transparent;
+	margin-bottom: 5px;}
+
+.wrapper .option{
+	margin: -37px 160px;
+	width: 50%;
+	background:transparent;
+	padding: 5px 0px 5px 27px;
+	margin-bottom: 10px;}
+
+input{
+	padding: 5px 0px 5px 27px;
+	width:100%;}
+
+#button{
+border-radius:5px;
+padding:4px 116px;
+background:chocolate;
+color:white;
+border:none;
+outline:none;
+margin: auto;
+}
+#button:hover{
+cursor:pointer;
+}
+
+#nextbutton{
+border-radius:5px;
+padding:5px 10px 5px 10px;
+background:chocolate;
+color:white;
+border:none;
+outline:none;
+margin: auto;
+}
+#nextbutton:hover{
+cursor:pointer;
+}
+
+p1{
+	font-size: 12px;
+    	color: red;
+	display: block;
+	text-align: center;
+}
+
+p2{
+	font-size: 14px;
+    	color: green;
+	display: block;
+	text-align: center;
+}
+
+@viewport{
+zoom: 1.0;
+width: extend-to-zoom;
+}
+
+@-ms-viewport{
+width: extend-to-zoom;
+zoom: 1.0;
+}
+</style>
+
+</head>
+<body>
+
+<div id="select-sem">
+	<div class="wrapper">
+		<h2><center>GPA CALCULATOR</center></h2>
+		<h3><center>ANNA UNIVERSITY</center></h3><br><br>
+	<center><h4>* Select Your Semester*</h4></center><br>
+	<center><h4>* Only For ECE*</h4></center><br><br>
+	<label for="semester"><b>Semester :  </b></label>
+	<select  class="langselect" id="sem" >
+	<option value="0">--Select--</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	</select>
+	<br><br>
+
+	<input type="button" value="Next" onclick="choosesem()" style="background: antiquewhite;padding: 3px 0 3px 0px;">
+	</div>
+</div>
+
+
+<div id="semester-1" style="display:none;">
+
+	<div class="wrapper">
+		<div class="content">
+		<label for="Technical English">Technical English  </label>
+		</div>
+	<div class="option">
+	<select  class="langselect" id="HS5151" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Engineering Mathematics I">Engineering Mathematics I</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="MA5158">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Engineering Physics"> Engineering Physics </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PH5151">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Engineering Chemistry">Engineering Chemistry </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="CY5151">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Problem Solving and Python Programming">Problem Solving and Python Programming </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="GE5153">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Basic Sciences Laboratory"> Basic Sciences Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="BS5161">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Problem Solving and Python Programming Laboratory"> Problem Solving and Python Programming Laboratory </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="GE5161">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<input type="button" value="Result"  id="button"  onclick="sem1()">
+	</div>
+	</div>
+
+<div id="semester-2" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="EngineeringMathematics II ">Engineering Mathematics II   </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="MA5252" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Basics of Electrical and Measurement Engineering">Basics of Electrical and Measurement Engineering</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EE5201">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Engineering Mechanics"> Engineering Mechanics </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="GE5152">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Circuit Theory">Circuit Theory </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5251">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Semiconductor Physics and Devices">Semiconductor Physics and Devices </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PH5202">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Workshop Practices Laboratory "> Workshop Practices Laboratory </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="GE5162">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electronic Devices and Circuit Theory Laboratory"> Electronic Devices and Circuit Theory Laboratory </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5211">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+	
+	<input type="button" value="Result" id="button" onclick="sem2()">
+	</div>
+</div>
+
+<div id="semester-3" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="Linear Algebra and NumericalMethods">Linear Algebra and Numerical Methods</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="MA5356" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electronic Circuits -I">Electronic Circuits -I</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5301">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electromagnetic Fields and Waves"> Electromagnetic Fields and Waves </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5302">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Digital System Design">Digital System Design </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5303">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Signals and Systems">Signals and Systems</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5304">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electronic Design Laboratory"> Electronic Design Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5311">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electrical and Measurements Laboratory">Electrical and Measurements Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EE5313">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+	
+	<input type="button" value="Result" id="button" onclick="sem3()">
+	</div>
+</div>
+
+<div id="semester-4" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="Transmission lines and wave Guides">Transmission lines and wave Guides</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5401" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Communication Theory">Communication Theory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5402">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electronics Circuits - II ">Electronics Circuits - II </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5403">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Digital Signal Processing">Digital Signal Processing</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5404">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Linear Integrated Circuits">Linear Integrated Circuits</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5405">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Environmental Sciences">Environmental Sciences</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="GE5251">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Audit Course I">Audit Course I</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="AC1">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Digital Signal Processing Laboratory">Digital Signal Processing Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5411">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Integrated Circuits Laboratory">Integrated Circuits Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5412">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+
+	<input type="button" value="Result" id="button" onclick="sem4()">
+	</div>
+</div>
+
+<div id="semester-5" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="Antennas and Wave Propagation">Antennas and Wave Propagation</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5501" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Digital Communication">Digital Communication</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5502">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Microprocessors and Microcontrollers">Microprocessors and Microcontrollers </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5551">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Control Systems Engineering">Control Systems Engineering</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5503">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Professional Elective I ">Professional Elective I </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PE1">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Principles of Management">Principles of Management</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="MG5451">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Microprocessor and Microcontroller Interfacing Laboratory">Microprocessor and Microcontroller Interfacing Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5561">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Analog and Digital Communication Laboratory">Analog and Digital Communication Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5511">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Summer Internship / Summer Project">Summer Internship / Summer Project</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5512">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+
+	<input type="button" value="Result" id="button" onclick="sem5()">
+	</div>
+</div>
+
+<div id="semester-6" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="Digital VLSI ">Digital VLSI </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5651" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Wireless Communication">Wireless Communication</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5601">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Communication Networks">Communication Networks</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5602">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Professional Elective II">Professional Elective II</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PE2">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Open Elective I ">Open Elective I </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="OE1">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electives – Humanities II ">Electives – Humanities II </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EH2">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="VLSI Laboratory">VLSI Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5611">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Wireless Communication and Networking Laboratory">Wireless Communication and Networking Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5612">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+
+	<input type="button" value="Result" id="button" onclick="sem6()">
+	</div>
+</div>
+
+<div id="semester-7" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="Millimeter And Optical Wave Communication">Millimeter And Optical Wave Communication</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5701" >
+	<option value="0">--Select--</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Electives – Humanities I ">Electives – Humanities I</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EH1">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Professional Elective III">Professional Elective III</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PE3">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Professional Elective IV">Professional Elective IV</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PE4">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Open Elective II ">Open Elective II </label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="OE2">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="High Frequency Communication Laboratory">High Frequency Communication Laboratory</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5711">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Project I">Project I</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5712">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+
+	<input type="button" value="Result" id="button" onclick="sem7()">
+	</div>
+</div>
+
+<div id="semester-8" style="display:none;">
+	<div class="wrapper">
+
+	<div class="content">
+	<label for="Professional Elective V">Professional Elective V</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PE5" >
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Professional Elective VI">Professional Elective VI</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="PE6">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div>
+	<br>
+
+	<div class="content">
+	<label for="Project II">Project II</label>
+	</div>
+	<div class="option">
+	<select  class="langselect" id="EC5811">
+	<option value="0">--Select--</option>
+	<option value="10">O</option>
+	<option value="9">A+</option>
+	<option value="8">A</option>
+	<option value="7">B+</option>
+	<option value="6">B</option>
+	</select>
+	</div><br>
+
+	<input type="button" value="Result" id="button" onclick="sem8()">
+	</div>
+</div>
+
+<center>
+<div style="display: block;background: white;margin: 50px;padding: 4px 0 3px 0;width: 50%;">
+	<p1 id="incrt"></p1>
+	<p2 id="result"></p2>
+</div>
+</center>
+
+</body>
+</html>
